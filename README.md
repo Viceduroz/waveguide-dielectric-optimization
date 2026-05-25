@@ -25,9 +25,13 @@ The fundamental objective of this project is to create an accurate numerical mod
 
 Optimization based on the Transmission Coefficient yielded the most accurate representation of the physical system, resulting in an optimized relative permittivity of **$\epsilon \approx 5.546 + 0.066i$**.
 
-### Experimental Data vs. Optimized Theoretical Model (Transmission $|T|$)
+### 1. Transmission Coefficient ($|T|$) Validation
 ![Optimized Transmission Validation](optimized_transmission.png)
 *Python-generated plot comparing raw VNA data (Red) vs the Optimized Theoretical Model (Blue). Notice the high fidelity fit after the 6.6 GHz waveguide cutoff frequency.*
+
+### 2. Reflection Coefficient ($|R|$) Validation
+![Optimized Reflection Validation](optimized_reflection.png)
+*Comparison of the theoretical and experimental Reflection coefficient. The optimization algorithm effectively captures the complex resonance behaviors caused by the FR4 slabs.*
 
 ##  Engineering Applications
 This automated parameter-fitting pipeline demonstrates the ability to translate raw hardware sensor data (VNA) into refined numerical models, a critical skill for R&D roles in telecommunications, acoustic engineering, material science, and simulation-driven hardware design.
